@@ -1,0 +1,50 @@
+.subscribe-form {
+  margin-left: 89px;
+}
+.subscribe-titel {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--titel-hero-button);
+  padding-bottom: 20px;
+}
+.subscribe-mail {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  background-color: var(--background-color);
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin-right: 12px;
+}
+.subscribe-btn {
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--titel-hero-button);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.subscribe-btn-titel {
+  margin-right: 24px;
+}
+.subscribe-icon {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translate(-50%, -50%);
+}
+.sybscribe-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}

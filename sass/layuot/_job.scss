@@ -1,0 +1,39 @@
+.section-job {
+  padding-bottom: 94px;
+}
+
+.job-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.job-list {
+  display: flex;
+}
+.job,
+.team-titel,
+.partners {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+.job-list-img-container {
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: -70px;
+}
+.job-list-img-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--titel-hero-button);
+}

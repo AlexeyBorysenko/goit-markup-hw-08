@@ -1,0 +1,45 @@
+.address {
+  font-style: normal;
+}
+.address-box {
+  width: 231px;
+}
+.footer-list-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.footer-list-address {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+  display: block;
+}
+.logo-white {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-link-mail {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff99;
+}
+.footer-link-tel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff99;
+}
