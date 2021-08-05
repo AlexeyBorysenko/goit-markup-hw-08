@@ -46,5 +46,6 @@
 .sybscribe-box {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }

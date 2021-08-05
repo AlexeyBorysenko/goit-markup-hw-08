@@ -34,10 +34,12 @@
   }
 }
 .footer-social-container {
-  margin-left: 70px;
+  // margin-left: 70px;
 }
 .footer-social-list {
   display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
 }
 .footer-social-list-icon {
   width: 20px;
@@ -71,6 +73,7 @@
 }
 
 .footer-social-titel {
+  text-align: center;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;

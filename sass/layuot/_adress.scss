@@ -2,15 +2,18 @@
   font-style: normal;
 }
 .address-box {
-  width: 231px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 60px;
 }
 .footer-list-item {
   &:not(:last-child) {
-    margin-bottom: 9px;
+    // margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 }
 .footer-list-address {
-  display: flex;
+  // display: flex;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
