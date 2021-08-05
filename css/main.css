@@ -56,10 +56,28 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .modal-button {
@@ -519,20 +537,47 @@ body {
 }
 
 .advantages {
-  display: flex;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .section-advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .advantages-list {
-  width: 270px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .advantages-list:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 .advantages-titel {
@@ -542,6 +587,13 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-titel {
+    text-align: left;
+  }
 }
 
 .advantages-text {
@@ -564,6 +616,8 @@ body {
 .advantages-icon {
   width: 70px;
   height: 70px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .advantages-icon-container {
@@ -572,10 +626,23 @@ body {
   padding: 25px 100px;
   margin-bottom: 30px;
   border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-job {
   padding-bottom: 94px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-job {
+    max-width: 1200px;
+    display: block;
+  }
 }
 
 .job-list-item:not(:last-child) {
@@ -619,13 +686,26 @@ body {
 }
 
 .section-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background: var(--bacground-button);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-list {
-  display: flex;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .team-list-item {
@@ -636,6 +716,18 @@ body {
 
 .team-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list-item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list-item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 .team-box {
@@ -662,6 +754,15 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.team {
+  width: 100%;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
 .partners-sections {
