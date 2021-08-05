@@ -676,6 +676,13 @@ body {
   background: var(--bacground-button);
 }
 
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team-list {
     display: flex;
@@ -696,6 +703,12 @@ body {
     flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list-item {
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 
