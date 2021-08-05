@@ -536,14 +536,11 @@ body {
   padding-bottom: 200px;
 }
 
-.advantages {
-  margin-bottom: -30px;
-}
-
 @media screen and (min-width: 768px) {
   .advantages {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
   }
 }
 
@@ -561,16 +558,16 @@ body {
 
 .advantages-list {
   width: 100%;
-  margin-bottom: 30px;
 }
 
 .advantages-list:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .advantages-list {
     flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
   }
 }
 
@@ -581,13 +578,13 @@ body {
 }
 
 .advantages-titel {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -616,33 +613,19 @@ body {
 .advantages-icon {
   width: 70px;
   height: 70px;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .advantages-icon-container {
+  text-align: center;
   width: 100%;
   background: #f5f4fa;
   padding: 25px 100px;
   margin-bottom: 30px;
   border-radius: 4px;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .section-job {
   padding-bottom: 94px;
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .section-job {
-    max-width: 1200px;
-    display: block;
-  }
 }
 
 .job-list-item:not(:last-child) {
@@ -686,26 +669,13 @@ body {
 }
 
 .section-team {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .section-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: var(--bacground-button);
 }
 
 .team-list {
-  margin-bottom: -30px;
-}
-
-@media screen and (min-width: 768px) {
-  .team-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
 }
 
 .team-list-item {
@@ -716,18 +686,6 @@ body {
 
 .team-list-item:not(:last-child) {
   margin-right: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .team-list-item {
-    flex-basis: calc((100% - 60px) / 2);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team-list-item {
-    flex-basis: calc((100% - 120px) / 4);
-  }
 }
 
 .team-box {
@@ -754,15 +712,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-.team {
-  width: 100%;
-  display: flex;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  align-items: center;
-  justify-content: center;
 }
 
 .partners-sections {
