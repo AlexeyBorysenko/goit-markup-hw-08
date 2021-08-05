@@ -560,9 +560,6 @@ body {
 
 .advantages-list {
   width: 100%;
-}
-
-.advantages-list:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -576,6 +573,7 @@ body {
 @media screen and (min-width: 1200px) {
   .advantages-list {
     flex-basis: calc((100% - 120px) / 4);
+    margin-bottom: 0px;
   }
 }
 
@@ -654,7 +652,15 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .job,
+  .team-titel,
+  .partners {
+    margin-bottom: 50px;
+  }
 }
 
 .job-list-img-container {
@@ -716,6 +722,7 @@ body {
 @media screen and (min-width: 1200px) {
   .team-list-item {
     flex-basis: calc((100% - 120px) / 4);
+    margin-bottom: 0px;
   }
 }
 
@@ -723,7 +730,14 @@ body {
   padding-top: 30px;
   padding-left: 32px;
   padding-right: 32px;
+  padding-bottom: 24px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-box {
+    margin-bottom: 0px;
+  }
 }
 
 .team-name {
@@ -746,12 +760,22 @@ body {
 }
 
 .partners-sections {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .partners-sections {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .partners-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .partners-list-icon {
@@ -767,14 +791,25 @@ body {
   width: 170px;
   height: 92px;
   box-sizing: border-box;
-}
-
-.partners-list-item:not(:last-child) {
-  margin-right: 30px;
   transition-property: border, box-sizing, border-radius;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
+  flex-basis: calc((100% - 60px) / 2);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .partners-list-item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .partners-list-item {
+    flex-basis: calc((100% - 180px) / 6);
+  }
 }
 
 .partners-list-link {
