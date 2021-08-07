@@ -1,10 +1,14 @@
 .address {
+  width: 100%;
   font-style: normal;
 }
 .address-box {
-  width: 100%;
+  display: block;
   text-align: center;
   padding-bottom: 60px;
+}
+.footer-list {
+  margin-bottom: 60px;
 }
 .footer-list-item {
   &:not(:last-child) {
