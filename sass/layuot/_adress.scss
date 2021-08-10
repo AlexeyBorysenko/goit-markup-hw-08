@@ -3,10 +3,12 @@
   font-style: normal;
 }
 .address-box {
-  display: block;
   text-align: center;
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+  }
 }
+
 .footer-list {
   margin-bottom: 60px;
 }

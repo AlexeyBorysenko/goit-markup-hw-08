@@ -1,0 +1,204 @@
+.portfolio {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+
+.btn-portfolio {
+  @extend %btn;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+
+  color: $text-color;
+  background: $portfolio-button-color;
+  border-color: transparent;
+  padding: 6px 22px;
+
+  transition: background-color 250ms $transition-timing-function,
+    box-shadow 250ms $transition-timing-function,
+    color 250ms $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $button-white-color;
+    background: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+}
+
+// // Изменяет в Porffolio текст кнопок фильтра
+.portfolo__list-btn {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  // margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    margin-top: -15px;
+    margin-left: -8px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: $mobile) {
+}
+
+@media screen and (min-width: $tablet) and (min-width: $desktop) {
+}
+
+.portfolio__item-btn {
+  @media screen and (max-width: 767px) {
+    // margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 8px;
+  }
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+.portfolio__item-btn--active button {
+  background-color: $accent-color;
+  color: $text-color-white;
+}
+.portfolio__industries-list {
+  display: flex;
+  flex-wrap: wrap;
+  // margin-left: -30px;
+  // margin-top: -30px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: stretch;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+.portfolio__industries-item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .portfolio__industries-link {
+    display: flex;
+    flex-direction: column;
+  }
+  // ---------------------------
+  // margin-left: 30px;
+  // margin-top: 30px;
+  box-shadow: none;
+  //   //Добавляем анимацию
+  transition: box-shadow 250ms $transition-timing-function;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    display: block;
+  }
+  &:hover .portfolio__overlay-text,
+  &:focus .portfolio__overlay-text {
+    transform: translateY(0%);
+    //Добавляем анимацию
+    transition: transform 250ms $transition-timing-function;
+  }
+}
+
+.portfolio__overlay-text {
+  background: rgba(33, 150, 243, 0.9);
+  color: $text-color-white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  transform: translateY(101%);
+  transition: transform 250ms, color 250ms $transition-timing-function;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+// .portfolio__thumb {
+//   // position: absolute;
+//   // top: 0;
+//   // left: 0;
+// }
+.portfolio__industries-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio__title {
+  @include fontStyle(18px, 2, $text-color, 0.06em, 700);
+  //   font-style: normal;
+  //   font-weight: bold;
+  //   font-size: 18px;
+  //   line-height: 36px;
+  //   //identical to box height, or 200%
+  //   letter-spacing: 0.06em;
+  //   color: $text-color;
+}
+.portfolio__box {
+  padding: 20px 24px;
+  border: 1px solid $border-portfolio-color;
+  border-top: none;
+  flex-grow: 1;
+}
+
+.portfolio__classification {
+  @include fontStyle(16px, 1.87, $portfolio-color-title, 0.03em);
+  //   font-style: normal;
+  //   font-weight: normal;
+  //   font-size: 16px;
+  //   line-height: 30px;
+  //   // identical to box height, or 187%
+  //   letter-spacing: 0.03em;
+  //   color: $portfolio-color-title;
+}

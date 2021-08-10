@@ -1,0 +1,62 @@
+.footer__social {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+}
+
+.footer__social-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-white-color;
+}
+.footer__social-list {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  @media screen and (min-width: $mobile) {
+  }
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+}
+
+.footer__social-link {
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: $footer-icon-color;
+  fill: $footer-social-link-fill;
+  // Добавляем анимацию
+  transition: background-color 250ms $transition-timing-function,
+    fill 250ms $transition-timing-function;
+  @media screen and (min-width: $mobile) {
+  }
+  @media screen and (min-width: $tablet) {
+  }
+  @media screen and (min-width: $desktop) {
+  }
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.footer__social-item + .footer__social-item {
+  margin-left: 10px;
+}
+
+.footer__social {
+  @media screen and (max-width: 1199px) {
+    // padding-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // margin-left: 70px;
+  }
+}

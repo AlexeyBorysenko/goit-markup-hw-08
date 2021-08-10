@@ -1,32 +1,49 @@
 .portfolio-btn {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .portfolio-section-btn {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .wrap {
-  margin-top: 34px;
-  margin-bottom: 89px;
 }
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  // margin-top: -30px;
+  // margin-left: -30px;
 }
+
 .portfolio-btn-item {
+  margin-left: 8px;
+  margin-bottom: 15px;
   border-radius: 4px;
   &:not(:last-child) {
-    margin-right: 10px;
+    // margin-right: 10px;
   }
 }
 
 .portfolio-list-item {
-  margin-top: 30px;
-  margin-left: 30px;
+  width: 100%;
+  // margin-top: 30px;
+  // margin-left: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .portfolio-list-item-link {

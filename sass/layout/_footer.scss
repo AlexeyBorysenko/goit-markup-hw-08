@@ -1,0 +1,66 @@
+//Footer
+.footer {
+  background-color: $footer-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // max-width: 1600px;
+  margin: 0px auto;
+  a:hover,
+  a:focus {
+    color: $accent-color;
+  }
+  &__box {
+    @media screen and (min-width: $mobile) {
+    }
+    @media screen and (min-width: $tablet) {
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      // position: relative;
+    }
+  }
+  &__adress {
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
+  }
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    color: $footer-item-color;
+    //Добавляем анимацию
+    transition: color 250ms $transition-timing-function;
+  }
+  &__map {
+    color: $text-white-color;
+    font-style: normal;
+    //Добавляем анимацию
+    transition: color 250ms $transition-timing-function;
+    // white-space: nowrap; // Запрещаем перенос текста
+  }
+  &__item + &__item {
+    margin-top: 9px;
+  }
+}
+
+.footer__contacts-wrapper {
+  @media screen and (max-width: 1199px) {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
